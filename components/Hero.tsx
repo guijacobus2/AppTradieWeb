@@ -147,7 +147,7 @@ function PhoneMockup() {
       onMouseLeave={onMouseLeave}
       className="relative"
       style={{ perspective: "1200px" }}
-      aria-label="Prévia do aplicativo AppTradie"
+      aria-label="Prévia do aplicativo Uppi"
     >
       <motion.div style={{ rotateX, rotateY, transformStyle: "preserve-3d" }} className="relative">
         {/* Soft gold glow behind phone */}

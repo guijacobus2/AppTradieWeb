@@ -23,9 +23,9 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const SITE_URL = "https://apptradie.com.br";
-const SITE_NAME = "AppTradie";
-const TITLE = "AppTradie — Serviços Domésticos ao Seu Alcance";
+const SITE_URL = "https://uppi.com.br";
+const SITE_NAME = "Uppi";
+const TITLE = "Uppi — Serviços Domésticos ao Seu Alcance";
 const DESCRIPTION =
   "Conectamos você com profissionais qualificados perto de você em todo o Brasil. Encanadores, eletricistas, diaristas e muito mais. Rápido, seguro e confiável.";
 
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     "contratar serviços casa",
     "app serviços domésticos",
     "marketplace serviços",
-    "AppTradie",
+    "Uppi",
   ],
   alternates: { canonical: "/" },
   openGraph: {
@@ -56,11 +56,11 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     locale: "pt_BR",
     type: "website",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "AppTradie — Serviços Domésticos ao Seu Alcance" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Uppi — Serviços Domésticos ao Seu Alcance" }],
   },
   twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION, images: ["/og-image.png"] },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-  appleWebApp: { title: "AppTradie" },
+  appleWebApp: { title: "Uppi" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

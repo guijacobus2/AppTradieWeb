@@ -55,7 +55,7 @@ export default function Navbar() {
           <Link
             href="/"
             className="flex items-center gap-3"
-            aria-label="AppTradie - Página inicial"
+            aria-label="Uppi - Página inicial"
           >
             <div
               className="w-8 h-8 rounded-lg flex items-center justify-center"
@@ -63,7 +63,7 @@ export default function Navbar() {
             >
               <Image
                 src="/tradie_logo_resized.png"
-                alt="AppTradie logo"
+                alt="Uppi logo"
                 width={20}
                 height={20}
                 className="object-contain"
@@ -74,7 +74,7 @@ export default function Navbar() {
               className="text-base font-bold tracking-tight"
               style={{ fontFamily: "var(--font-jakarta)", color: TEXT }}
             >
-              AppTradie
+              Uppi
             </span>
           </Link>
 

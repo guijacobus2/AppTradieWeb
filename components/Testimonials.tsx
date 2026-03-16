@@ -25,7 +25,7 @@ const testimonials = [
     role: "Eletricista · Rio de Janeiro, RJ",
     initials: "MO",
     rating: 5,
-    text: "Desde que entrei no AppTradie, minha agenda está sempre cheia. Já dobrei minha renda em 3 meses. A plataforma é muito fácil de usar.",
+    text: "Desde que entrei no Uppi, minha agenda está sempre cheia. Já dobrei minha renda em 3 meses. A plataforma é muito fácil de usar.",
     featured: true,
   },
   {

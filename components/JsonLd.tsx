@@ -1,12 +1,12 @@
 import React from "react";
 
-const SITE_URL = "https://apptradie.com.br";
+const SITE_URL = "https://uppi.com.br";
 
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": `${SITE_URL}/#organization`,
-  name: "AppTradie",
+  name: "Uppi",
   url: SITE_URL,
   logo: {
     "@type": "ImageObject",
@@ -35,9 +35,9 @@ const organizationSchema = {
     },
   },
   sameAs: [
-    "https://www.instagram.com/apptradie",
-    "https://www.facebook.com/apptradie",
-    "https://www.linkedin.com/company/apptradie",
+    "https://www.instagram.com/uppiapp",
+    "https://www.facebook.com/uppiapp",
+    "https://www.linkedin.com/company/uppiapp",
   ],
 };
 
@@ -45,7 +45,7 @@ const mobileApplicationSchema = {
   "@context": "https://schema.org",
   "@type": "MobileApplication",
   "@id": `${SITE_URL}/#mobileapp`,
-  name: "AppTradie",
+  name: "Uppi",
   operatingSystem: ["iOS", "Android"],
   applicationCategory: ["UtilitiesApplication", "HomeAndGarden"],
   description:
@@ -72,7 +72,7 @@ const webSiteSchema = {
   "@type": "WebSite",
   "@id": `${SITE_URL}/#website`,
   url: SITE_URL,
-  name: "AppTradie",
+  name: "Uppi",
   description:
     "Marketplace de serviços domésticos que conecta moradores e profissionais qualificados no Brasil.",
   publisher: {
@@ -93,7 +93,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "SoftwareApplication"],
   "@id": `${SITE_URL}/#localbusiness`,
-  name: "AppTradie",
+  name: "Uppi",
   url: SITE_URL,
   image: `${SITE_URL}/tradie_logo_resized.png`,
   description:

@@ -38,7 +38,7 @@ export default function Footer() {
             <Link
               href="/"
               className="inline-flex items-center gap-3"
-              aria-label="AppTradie - Página inicial"
+              aria-label="Uppi - Página inicial"
             >
               <div
                 className="w-8 h-8 rounded-lg flex items-center justify-center"
@@ -46,7 +46,7 @@ export default function Footer() {
               >
                 <Image
                   src="/tradie_logo_resized.png"
-                  alt="AppTradie logo"
+                  alt="Uppi logo"
                   width={20}
                   height={20}
                   className="object-contain"
@@ -56,7 +56,7 @@ export default function Footer() {
                 className="font-bold text-base"
                 style={{ fontFamily: "var(--font-jakarta)", color: TEXT }}
               >
-                AppTradie
+                Uppi
               </span>
             </Link>
             <p
@@ -135,7 +135,7 @@ export default function Footer() {
             className="text-[9px] uppercase tracking-widest"
             style={{ fontFamily: "var(--font-inter)", color: FAINT }}
           >
-            &copy; {year} AppTradie. Todos os direitos reservados.
+            &copy; {year} Uppi. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-2">
             <div className="w-1.5 h-1.5 rounded-full" style={{ background: `${GOLD}60` }} />
