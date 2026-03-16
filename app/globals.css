@@ -84,6 +84,12 @@ h1, h2, h3, h4, h5, h6 {
   50%       { transform: translateY(-8px); }
 }
 
+/* Phone mockup tab switch fade */
+@keyframes fadeIn {
+  0%   { opacity: 0; transform: translateY(6px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
 /* HowItWorks cards fade + slide in from below */
 @keyframes fadeSlideUp {
   0% {
@@ -94,6 +100,11 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* ─── Phone mockup tab fade ─────────────────────── */
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 /* ─── Hero phone animations ─────────────────────── */
@@ -131,7 +142,8 @@ h1, h2, h3, h4, h5, h6 {
   *,
   .hero-float-card,
   .hero-notification-card,
-  .hiw-card {
+  .hiw-card,
+  .animate-fade-in {
     animation: none !important;
     transition-duration: 0.01ms !important;
   }

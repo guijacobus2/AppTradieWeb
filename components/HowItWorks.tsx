@@ -19,7 +19,7 @@ const steps = [
     StepIcon: SearchIcon,
     title: "Busque o serviço",
     description:
-      "Digite o que precisa — encanador, eletricista, diarista, pintor — e encontre profissionais disponíveis perto de você em segundos.",
+      "Digite o que precisa, encanador, eletricista, diarista, pintor, e encontre profissionais disponíveis perto de você em segundos.",
     accentColor: "#4CAF50",
     delay: "0ms",
   },

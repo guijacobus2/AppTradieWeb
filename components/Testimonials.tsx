@@ -3,7 +3,7 @@ import { StarIcon } from "./icons/StrokeIcons";
 const testimonials = [
   {
     name: "Ana Rodrigues",
-    role: "Consumidora — São Paulo, SP",
+    role: "Consumidora, São Paulo, SP",
     avatar: "AR",
     rating: 5,
     text: "Precisei de um encanador urgente e em menos de 10 minutos já tinha 3 orçamentos. Contratei na hora e o problema foi resolvido no mesmo dia. Incrível!",
@@ -11,7 +11,7 @@ const testimonials = [
   },
   {
     name: "Marcos Oliveira",
-    role: "Eletricista — Rio de Janeiro, RJ",
+    role: "Eletricista, Rio de Janeiro, RJ",
     avatar: "MO",
     rating: 5,
     text: "Desde que entrei no AppTradie, minha agenda está sempre cheia. Já dobrei minha renda em 3 meses. A plataforma é muito fácil de usar.",
@@ -19,7 +19,7 @@ const testimonials = [
   },
   {
     name: "Fernanda Lima",
-    role: "Consumidora — Belo Horizonte, MG",
+    role: "Consumidora, Belo Horizonte, MG",
     avatar: "FL",
     rating: 5,
     text: "Contratei uma diarista pelo app e fiquei impressionada com a facilidade. Profissional pontual e trabalho impecável. Já indiquei para todas as minhas amigas.",

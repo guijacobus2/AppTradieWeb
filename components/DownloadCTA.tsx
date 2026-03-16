@@ -14,7 +14,7 @@ export default async function DownloadCTA() {
             </h2>
             <p className="text-lg text-white/80 leading-relaxed">
               Disponível gratuitamente para iOS e Android. Cadastro rápido,
-              sem burocracia — comece a usar em minutos.
+              sem burocracia, comece a usar em minutos.
             </p>
           </div>
 

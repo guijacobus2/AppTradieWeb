@@ -136,7 +136,7 @@ export default async function ForProviders() {
                 <div className="flex items-center gap-3 bg-[#4CAF50]/10 border border-[#4CAF50]/20 rounded-2xl p-3">
                   <Bell size={14} className="text-[#4CAF50] flex-shrink-0" />
                   <p className="text-[#A5D6A7] text-xs">
-                    <span className="text-white font-medium">Novo pedido</span> — Eletricista, 1.8 km
+                    <span className="text-white font-medium">Novo pedido</span>, Eletricista, 1.8 km
                   </p>
                 </div>
               </div>

@@ -22,7 +22,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "AppTradie — Serviços Domésticos ao Seu Alcance",
+  title: "AppTradie, Serviços Domésticos ao Seu Alcance",
   description:
     "Conectamos você com profissionais qualificados perto de você. Encanadores, eletricistas, diaristas e muito mais. Rápido, seguro e confiável.",
 };
