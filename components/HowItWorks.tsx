@@ -1,14 +1,24 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { SearchIcon, WrenchIcon } from "./icons/StrokeIcons";
 
-// Custom chat-bubble icon for the "orçamentos" step
+const GOLD = "#00C472";
+const BG   = "#0A0A0F";
+const SURF = "#111118";
+const RAIS = "#1A1A24";
+const BORD = "#242430";
+const TEXT = "#F0EDE8";
+const MUTE = "#9A96A0";
+
 function ChatBubbleIcon({ size = 32, stroke = "currentColor" }: { size?: number; stroke?: string }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path
         d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
-        stroke={stroke} strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round"
+        stroke={stroke} strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round"
       />
-      <path d="M8 10h8M8 13h5" stroke={stroke} strokeWidth={2} strokeLinecap="round" />
+      <path d="M8 10h8M8 13h5" stroke={stroke} strokeWidth={1.5} strokeLinecap="round" />
     </svg>
   );
 }
@@ -19,9 +29,7 @@ const steps = [
     StepIcon: SearchIcon,
     title: "Busque o serviço",
     description:
-      "Digite o que precisa, encanador, eletricista, diarista, pintor, e encontre profissionais disponíveis perto de você em segundos.",
-    accentColor: "#4CAF50",
-    delay: "0ms",
+      "Digite o que precisa — encanador, eletricista, diarista, pintor — e encontre profissionais disponíveis perto de você em segundos.",
   },
   {
     step: "02",
@@ -29,8 +37,6 @@ const steps = [
     title: "Receba orçamentos",
     description:
       "Profissionais enviam propostas com preço e prazo. Compare, veja avaliações e escolha o que melhor atende você.",
-    accentColor: "#007AFF",
-    delay: "120ms",
   },
   {
     step: "03",
@@ -38,71 +44,115 @@ const steps = [
     title: "Serviço realizado",
     description:
       "Acompanhe o status em tempo real. Ao concluir, avalie o profissional e ajude outros usuários a escolherem bem.",
-    accentColor: "#4CAF50",
-    delay: "240ms",
   },
 ];
 
-export default async function HowItWorks() {
+export default function HowItWorks() {
   return (
-    <section id="como-funciona" className="py-20 lg:py-28 bg-[#F8F8F8]">
+    <section
+      id="como-funciona"
+      className="py-24 lg:py-32"
+      style={{ background: BG, borderTop: `1px solid ${BORD}` }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-sm font-semibold text-[#4CAF50] uppercase tracking-wider mb-3">
-            Simples assim
-          </p>
-          <h2
-            className="text-3xl sm:text-4xl font-bold text-[#212121]"
-            style={{ fontFamily: "var(--font-poppins)" }}
+        <div className="mb-16 lg:mb-20">
+          <p
+            className="text-xs font-semibold uppercase tracking-widest mb-5"
+            style={{ color: GOLD, fontFamily: "var(--font-inter)" }}
           >
-            Como funciona o AppTradie
-          </h2>
-          <p className="mt-4 text-lg text-[#757575] max-w-2xl mx-auto">
-            Em menos de 5 minutos você encontra, contrata e acompanha um profissional qualificado.
+            Como Funciona
           </p>
+          <h2 style={{ fontFamily: "var(--font-jakarta)" }}>
+            <span
+              className="block font-extrabold leading-none"
+              style={{
+                fontSize: "clamp(32px, 4.5vw, 60px)",
+                color: TEXT,
+                letterSpacing: "-0.03em",
+              }}
+            >
+              3 passos simples.
+            </span>
+            <span
+              className="block font-medium leading-snug mt-2"
+              style={{
+                fontSize: "clamp(18px, 2.5vw, 28px)",
+                color: MUTE,
+                letterSpacing: "-0.01em",
+              }}
+            >
+              Menos de 5 minutos até o profissional.
+            </span>
+          </h2>
         </div>
 
-        {/* UIverse-style step cards */}
-        <div className="flex flex-col gap-6 max-w-3xl mx-auto">
-          {steps.map(({ step, StepIcon, title, description, accentColor, delay }) => (
-            <div
+        {/* Steps */}
+        <div className="grid lg:grid-cols-3 gap-4 lg:gap-6">
+          {steps.map(({ step, StepIcon, title, description }, i) => (
+            <motion.div
               key={step}
-              className="hiw-card bg-white rounded-2xl shadow-sm border border-[#EEEEEE] overflow-hidden flex"
-              style={{ "--hiw-delay": delay } as React.CSSProperties}
+              initial={{ opacity: 0, y: 32 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-5% 0px" }}
+              transition={{ duration: 0.6, ease: "easeOut" as const, delay: i * 0.1 }}
+              className="relative flex flex-col gap-6 p-7 rounded-2xl"
+              style={{
+                background: SURF,
+                border: `1px solid ${BORD}`,
+              }}
             >
-              {/* Left accent bar */}
-              <div
-                className="w-1.5 flex-shrink-0"
-                style={{ backgroundColor: accentColor }}
-                aria-hidden="true"
-              />
-
-              {/* Card content */}
-              <div className="flex items-center gap-5 p-6 flex-1">
-                {/* Icon box */}
+              {/* Step pill */}
+              <div className="flex items-center gap-3">
                 <div
-                  className="flex-shrink-0 w-12 h-12 rounded-2xl flex items-center justify-center"
-                  style={{ backgroundColor: `${accentColor}18` }}
-                  aria-label={`Passo ${step}`}
+                  className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0"
+                  style={{ background: `${GOLD}20`, border: `1px solid ${GOLD}40` }}
                 >
-                  <StepIcon size={24} stroke={accentColor} />
-                </div>
-
-                {/* Text */}
-                <div className="flex flex-col gap-1.5">
-                  <h3
-                    className="text-lg font-semibold text-[#212121]"
-                    style={{ fontFamily: "var(--font-poppins)" }}
+                  <span
+                    className="text-[10px] font-bold"
+                    style={{ color: GOLD, fontFamily: "var(--font-jakarta)" }}
                   >
-                    {title}
-                  </h3>
-                  <p className="text-[#757575] leading-relaxed text-sm sm:text-base">
-                    {description}
-                  </p>
+                    {step}
+                  </span>
                 </div>
+                <div className="flex-1 h-px" style={{ background: BORD }} />
               </div>
-            </div>
+
+              {/* Icon */}
+              <div
+                className="w-10 h-10 rounded-xl flex items-center justify-center"
+                style={{ background: RAIS, border: `1px solid ${BORD}` }}
+              >
+                <StepIcon size={20} stroke={GOLD} />
+              </div>
+
+              {/* Text */}
+              <div className="flex flex-col gap-2">
+                <h3
+                  className="font-semibold leading-tight"
+                  style={{
+                    fontFamily: "var(--font-jakarta)",
+                    fontSize: "1.05rem",
+                    color: TEXT,
+                  }}
+                >
+                  {title}
+                </h3>
+                <p
+                  className="leading-relaxed text-sm"
+                  style={{ color: MUTE, fontFamily: "var(--font-inter)" }}
+                >
+                  {description}
+                </p>
+              </div>
+
+              {/* Bottom accent on hover */}
+              <div
+                className="absolute bottom-0 left-6 right-6 h-px opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                style={{ background: GOLD }}
+              />
+            </motion.div>
           ))}
         </div>
       </div>

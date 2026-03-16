@@ -13,21 +13,12 @@ const organizationSchema = {
     url: `${SITE_URL}/tradie_logo_resized.png`,
   },
   description:
-    "Plataforma digital que conecta moradores de Porto Alegre e do Rio Grande do Sul a profissionais qualificados de serviços domésticos. Encanadores, eletricistas, diaristas, marceneiros, pintores, pedreiros e mais de 40 categorias.",
+    "Plataforma digital que conecta moradores de todo o Brasil a profissionais qualificados de serviços domésticos. Encanadores, eletricistas, diaristas, marceneiros, pintores, pedreiros e mais de 40 categorias.",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Av. Borges de Medeiros, 1501",
-    addressLocality: "Porto Alegre",
-    addressRegion: "RS",
-    postalCode: "90110-150",
     addressCountry: "BR",
   },
   areaServed: [
-    {
-      "@type": "State",
-      name: "Rio Grande do Sul",
-      sameAs: "https://www.wikidata.org/wiki/Q45981",
-    },
     {
       "@type": "Country",
       name: "Brasil",
@@ -58,7 +49,7 @@ const mobileApplicationSchema = {
   operatingSystem: ["iOS", "Android"],
   applicationCategory: ["UtilitiesApplication", "HomeAndGarden"],
   description:
-    "Aplicativo para contratar profissionais de serviços domésticos em Porto Alegre e no Rio Grande do Sul. Solicite orçamentos, compare preços e acompanhe o serviço em tempo real.",
+    "Aplicativo para contratar profissionais de serviços domésticos em todo o Brasil. Solicite orçamentos, compare preços e acompanhe o serviço em tempo real.",
   offers: {
     "@type": "Offer",
     price: "0",
@@ -106,24 +97,15 @@ const localBusinessSchema = {
   url: SITE_URL,
   image: `${SITE_URL}/tradie_logo_resized.png`,
   description:
-    "Marketplace de serviços domésticos em Porto Alegre. Contrate encanadores, eletricistas, diaristas e mais de 40 categorias de profissionais com avaliações verificadas.",
+    "Marketplace de serviços domésticos no Brasil. Contrate encanadores, eletricistas, diaristas e mais de 40 categorias de profissionais com avaliações verificadas.",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Av. Borges de Medeiros, 1501",
-    addressLocality: "Porto Alegre",
-    addressRegion: "RS",
-    postalCode: "90110-150",
     addressCountry: "BR",
   },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: -30.0277,
-    longitude: -51.2287,
-  },
   areaServed: {
-    "@type": "City",
-    name: "Porto Alegre",
-    sameAs: "https://www.wikidata.org/wiki/Q40269",
+    "@type": "Country",
+    name: "Brasil",
+    sameAs: "https://www.wikidata.org/wiki/Q155",
   },
   serviceType: "Marketplace de serviços domésticos",
   applicationCategory: "HomeAndGarden",
