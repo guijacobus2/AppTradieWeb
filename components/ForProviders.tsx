@@ -250,7 +250,7 @@ export default function ForProviders() {
                 <p className="text-[9px] uppercase tracking-widest mb-3" style={{ color: MUTE, fontFamily: "var(--font-inter)" }}>Próximo serviço</p>
                 <div
                   className="flex items-center gap-3 p-3 rounded-lg"
-                  style={{ background: RAIS, border: `1px solid ${BORD}`, borderLeft: `3px solid ${GOLD}` }}
+                  style={{ background: RAIS, border: `1px solid ${BORD}` }}
                 >
                   <div className="flex-1 min-w-0">
                     <p className="font-semibold truncate text-sm" style={{ color: TEXT, fontFamily: "var(--font-jakarta)" }}>Vazamento cozinha</p>
@@ -268,7 +268,6 @@ export default function ForProviders() {
               {/* Notification */}
               <div
                 className="flex items-center gap-3 px-5 py-4"
-                style={{ borderLeft: `3px solid ${GOLD}` }}
               >
                 <BellIcon size={14} stroke={GOLD} />
                 <p className="text-[10px]" style={{ color: MUTE, fontFamily: "var(--font-inter)" }}>
