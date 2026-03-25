@@ -23,7 +23,7 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const SITE_URL = "https://uppi.com.br";
+const SITE_URL = "https://uppiapp.com.br";
 const SITE_NAME = "Uppi";
 const TITLE = "Uppi — Serviços Domésticos ao Seu Alcance";
 const DESCRIPTION =

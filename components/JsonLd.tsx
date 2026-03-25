@@ -1,6 +1,6 @@
 import React from "react";
 
-const SITE_URL = "https://uppi.com.br";
+const SITE_URL = "https://uppiapp.com.br";
 
 const organizationSchema = {
   "@context": "https://schema.org",
