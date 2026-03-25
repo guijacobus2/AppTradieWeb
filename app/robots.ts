@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: "/_next/",
       },
     ],
-    sitemap: "https://uppi.com.br/sitemap.xml",
+    sitemap: "https://uppiapp.com.br/sitemap.xml",
   };
 }
