@@ -5,26 +5,78 @@ import Link from "next/link";
 import { useState } from "react";
 
 const GOLD = "#00C472";
-const BG   = "#0A0A0F";
+const BG = "#0A0A0F";
 const BORD = "#242430";
 const TEXT = "#F0EDE8";
 const MUTE = "#9A96A0";
 
 function MenuIcon() {
   return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="3" y1="18" x2="21" y2="18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    <svg
+      width="22"
+      height="22"
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+      <line
+        x1="3"
+        y1="6"
+        x2="21"
+        y2="6"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <line
+        x1="3"
+        y1="12"
+        x2="21"
+        y2="12"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <line
+        x1="3"
+        y1="18"
+        x2="21"
+        y2="18"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
 
 function CloseIcon() {
   return (
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="20" y1="4" x2="4" y2="20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    <svg
+      width="22"
+      height="22"
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+      <line
+        x1="4"
+        y1="4"
+        x2="20"
+        y2="20"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <line
+        x1="20"
+        y1="4"
+        x2="4"
+        y2="20"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
     </svg>
   );
 }
@@ -50,7 +102,6 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-
           {/* Logo */}
           <Link
             href="/"
@@ -62,7 +113,7 @@ export default function Navbar() {
               style={{ background: `${GOLD}18`, border: `1px solid ${GOLD}40` }}
             >
               <Image
-                src="/tradie_logo_resized.png"
+                src="/icon1.png"
                 alt="Uppi logo"
                 width={20}
                 height={20}
@@ -79,7 +130,10 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8" aria-label="Navegação principal">
+          <nav
+            className="hidden md:flex items-center gap-8"
+            aria-label="Navegação principal"
+          >
             {navLinks.map(({ label, href }) => (
               <Link
                 key={label}
@@ -89,8 +143,8 @@ export default function Navbar() {
                   fontFamily: "var(--font-inter)",
                   color: MUTE,
                 }}
-                onMouseEnter={e => (e.currentTarget.style.color = TEXT)}
-                onMouseLeave={e => (e.currentTarget.style.color = MUTE)}
+                onMouseEnter={(e) => (e.currentTarget.style.color = TEXT)}
+                onMouseLeave={(e) => (e.currentTarget.style.color = MUTE)}
               >
                 {label}
               </Link>
@@ -107,10 +161,10 @@ export default function Navbar() {
                 background: GOLD,
                 color: BG,
               }}
-              onMouseEnter={e => {
+              onMouseEnter={(e) => {
                 (e.currentTarget as HTMLElement).style.opacity = "0.88";
               }}
-              onMouseLeave={e => {
+              onMouseLeave={(e) => {
                 (e.currentTarget as HTMLElement).style.opacity = "1";
               }}
             >
@@ -151,7 +205,11 @@ export default function Navbar() {
               href="#download"
               onClick={() => setOpen(false)}
               className="text-sm font-semibold px-5 py-3 rounded-lg text-center mt-2"
-              style={{ fontFamily: "var(--font-jakarta)", background: GOLD, color: BG }}
+              style={{
+                fontFamily: "var(--font-jakarta)",
+                background: GOLD,
+                color: BG,
+              }}
             >
               Baixar App
             </a>

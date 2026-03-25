@@ -10,7 +10,7 @@ const organizationSchema = {
   url: SITE_URL,
   logo: {
     "@type": "ImageObject",
-    url: `${SITE_URL}/tradie_logo_resized.png`,
+    url: `${SITE_URL}/logo_uppi.png`,
   },
   description:
     "Plataforma digital que conecta moradores de todo o Brasil a profissionais qualificados de serviços domésticos. Encanadores, eletricistas, diaristas, marceneiros, pintores, pedreiros e mais de 40 categorias.",
@@ -95,7 +95,7 @@ const localBusinessSchema = {
   "@id": `${SITE_URL}/#localbusiness`,
   name: "Uppi",
   url: SITE_URL,
-  image: `${SITE_URL}/tradie_logo_resized.png`,
+  image: `${SITE_URL}/icon1.png`,
   description:
     "Marketplace de serviços domésticos no Brasil. Contrate encanadores, eletricistas, diaristas e mais de 40 categorias de profissionais com avaliações verificadas.",
   address: {

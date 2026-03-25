@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const GOLD = "#00C472";
-const BG   = "#0A0A0F";
+const BG = "#0A0A0F";
 const BORD = "#242430";
 const TEXT = "#F0EDE8";
 const MUTE = "#9A96A0";
@@ -32,7 +32,6 @@ export default function Footer() {
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-12 pb-12"
           style={{ borderBottom: `1px solid ${BORD}` }}
         >
-
           {/* Brand */}
           <div className="flex flex-col gap-5">
             <Link
@@ -42,10 +41,13 @@ export default function Footer() {
             >
               <div
                 className="w-8 h-8 rounded-lg flex items-center justify-center"
-                style={{ background: `${GOLD}18`, border: `1px solid ${GOLD}40` }}
+                style={{
+                  background: `${GOLD}18`,
+                  border: `1px solid ${GOLD}40`,
+                }}
               >
                 <Image
-                  src="/tradie_logo_resized.png"
+                  src="/icon1.png"
                   alt="Uppi logo"
                   width={20}
                   height={20}
@@ -63,7 +65,8 @@ export default function Footer() {
               className="leading-relaxed max-w-xs text-sm"
               style={{ fontFamily: "var(--font-inter)", color: MUTE }}
             >
-              Conectando brasileiros com profissionais de serviços domésticos de forma rápida, segura e confiável.
+              Conectando brasileiros com profissionais de serviços domésticos de
+              forma rápida, segura e confiável.
             </p>
 
             {/* Made in Brazil */}
@@ -93,8 +96,8 @@ export default function Footer() {
                     href={href}
                     className="text-sm transition-colors duration-150"
                     style={{ fontFamily: "var(--font-inter)", color: MUTE }}
-                    onMouseEnter={e => (e.currentTarget.style.color = TEXT)}
-                    onMouseLeave={e => (e.currentTarget.style.color = MUTE)}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = TEXT)}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = MUTE)}
                   >
                     {label}
                   </Link>
@@ -118,8 +121,8 @@ export default function Footer() {
                     href={href}
                     className="text-sm transition-colors duration-150"
                     style={{ fontFamily: "var(--font-inter)", color: MUTE }}
-                    onMouseEnter={e => (e.currentTarget.style.color = TEXT)}
-                    onMouseLeave={e => (e.currentTarget.style.color = MUTE)}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = TEXT)}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = MUTE)}
                   >
                     {label}
                   </Link>
@@ -138,7 +141,10 @@ export default function Footer() {
             &copy; {year} Uppi. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-2">
-            <div className="w-1.5 h-1.5 rounded-full" style={{ background: `${GOLD}60` }} />
+            <div
+              className="w-1.5 h-1.5 rounded-full"
+              style={{ background: `${GOLD}60` }}
+            />
             <p
               className="text-[9px] uppercase tracking-widest"
               style={{ fontFamily: "var(--font-inter)", color: FAINT }}
