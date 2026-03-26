@@ -61,6 +61,15 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION, images: ["/og-image.png"] },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   appleWebApp: { title: "Uppi" },
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/my-favicon/web-app-manifest-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/my-favicon/web-app-manifest-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: "/apple-icon.png",
+    shortcut: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
