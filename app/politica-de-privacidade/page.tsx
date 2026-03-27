@@ -29,12 +29,14 @@ Contato: [privacidade@uppiapp.com.br]`,
 • Nome completo e nome comercial
 • Endereço de e-mail
 • Número de telefone
-• CPF (Cadastro de Pessoas Físicas)
+• CPF (Cadastro de Pessoas Físicas) — exclusivamente de Profissionais
 • Localização precisa (para conectar consumidores com profissionais próximos)
 • Fotos e vídeos anexados a pedidos de serviço
-• Informações de pagamento (cartão de crédito/débito, tokenizados via Pagar.me — nunca armazenamos dados brutos do cartão)
-• Informações financeiras: saldo de carteira, histórico de transações
-• Identificador de usuário e token de notificação push`,
+• Informações de pagamento de Profissionais para recarga de créditos (cartão de crédito/débito ou PIX, tokenizados via Pagar.me — nunca armazenamos dados brutos do cartão)
+• Informações financeiras de Profissionais: saldo de créditos e histórico de recargas
+• Identificador de usuário e token de notificação push
+
+A Uppi não coleta nem processa informações de pagamento de consumidores. Os pagamentos pelos serviços são realizados diretamente entre consumidores e Profissionais, fora da plataforma.`,
   },
   {
     title: "3. Como usamos seus dados",
@@ -42,7 +44,7 @@ Contato: [privacidade@uppiapp.com.br]`,
 
 • Criar e gerenciar sua conta na plataforma
 • Conectar consumidores com profissionais de serviços próximos
-• Processar pagamentos e transferências
+• Processar recargas de créditos de Profissionais na carteira da plataforma
 • Enviar notificações sobre pedidos, orçamentos e reservas
 • Verificar identidade e prevenir fraudes
 • Cumprir obrigações legais e regulatórias
@@ -54,7 +56,7 @@ Não utilizamos seus dados para publicidade de terceiros nem para fins de perfil
     title: "4. Compartilhamento de dados",
     content: `Compartilhamos seus dados apenas com:
 
-• Pagar.me: processamento de pagamentos e tokenização de cartões
+• Pagar.me: processamento de recargas de créditos de Profissionais e tokenização de cartões (apenas dados de Profissionais que realizam recargas)
 • Google: geocodificação de endereços e autocompletar de endereços via Google Places API
 • Firebase (Google): envio de notificações push
 • Supabase: infraestrutura de banco de dados e autenticação (servidores localizados no Brasil, com cláusulas contratuais padrão aplicáveis)
@@ -66,7 +68,7 @@ Não vendemos, alugamos nem comercializamos seus dados pessoais com terceiros pa
     content: `Mantemos seus dados pelo tempo necessário para prestar os serviços ou cumprir obrigações legais:
 
 • Dados de conta: enquanto sua conta estiver ativa
-• Dados de transações financeiras: mínimo de 5 anos, conforme exigido pela legislação fiscal brasileira
+• Dados de recargas de créditos de Profissionais: mínimo de 5 anos, conforme exigido pela legislação fiscal brasileira
 • Dados de localização: não são armazenados permanentemente; usados apenas em tempo real para a prestação do serviço
 • Após o encerramento da conta: dados são anonimizados ou excluídos no prazo de 30 dias, salvo obrigação legal`,
   },
@@ -92,7 +94,7 @@ Responderemos à sua solicitação em até 15 dias úteis.`,
 
 • Criptografia em trânsito (TLS/HTTPS) em todas as comunicações
 • Autenticação segura via Supabase Auth com tokens JWT
-• Tokenização de dados de cartão via Pagar.me (seus dados de cartão nunca passam por nossos servidores)
+• Tokenização de dados de cartão via Pagar.me para recargas de créditos de Profissionais (dados de cartão nunca passam por nossos servidores)
 • Controle de acesso baseado em funções (Row Level Security no banco de dados)
 • Chaves de API e credenciais armazenadas em variáveis de ambiente seguras, nunca no código-fonte`,
   },

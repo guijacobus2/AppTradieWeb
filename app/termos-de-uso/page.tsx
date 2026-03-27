@@ -29,10 +29,12 @@ A Uppi reserva-se o direito de atualizar estes Termos a qualquer momento. Altera
 
 A Uppi atua exclusivamente como intermediária. Não somos empregadores dos Profissionais, não prestamos os serviços diretamente e não garantimos a qualidade, segurança ou legalidade dos serviços contratados entre as partes.
 
+A Uppi não processa nem intermedeia pagamentos entre consumidores e Profissionais. Os acordos financeiros relativos aos serviços são realizados diretamente entre as partes, fora da plataforma.
+
 Nossos serviços incluem:
 • Publicação e busca de pedidos de serviço
 • Sistema de orçamentos entre consumidores e profissionais
-• Processamento de pagamentos e gestão de carteira digital
+• Gestão de carteira de créditos para Profissionais
 • Avaliações e reputação de usuários
 • Notificações sobre o andamento dos pedidos`,
   },
@@ -57,7 +59,7 @@ Profissionais devem fornecer CPF válido e são responsáveis por manter suas in
 • Usar a plataforma para fins ilegais ou fraudulentos
 • Assediar, ameaçar ou discriminar outros usuários
 • Publicar conteúdo ofensivo, difamatório ou que viole direitos de terceiros
-• Tentar burlar o sistema de pagamentos da plataforma realizando transações fora dela
+• Tentar fraudar ou manipular o sistema de créditos da plataforma
 • Criar múltiplas contas para manipular avaliações ou o sistema de reputação
 • Usar bots, scrapers ou métodos automatizados para acessar a plataforma
 • Usar informações de outros usuários obtidas pela plataforma para fins não relacionados ao serviço contratado
@@ -65,35 +67,33 @@ Profissionais devem fornecer CPF válido e são responsáveis por manter suas in
 O descumprimento destas obrigações pode resultar na suspensão ou exclusão permanente da sua conta.`,
   },
   {
-    title: "5. Pagamentos e Taxas",
-    content: `Os pagamentos na plataforma são processados pela Pagar.me, parceira certificada pelo Banco Central do Brasil.
+    title: "5. Créditos e Carteira do Profissional",
+    content: `A Uppi opera um sistema de créditos destinado exclusivamente a Profissionais cadastrados na plataforma. A Uppi não processa pagamentos entre consumidores e Profissionais.
 
-Consumidores:
-• O valor do serviço é acordado diretamente entre consumidor e profissional via sistema de orçamentos
-• O pagamento é liberado ao profissional após a confirmação da conclusão do serviço
-• Aceitamos cartão de crédito, débito e PIX
+Carteira de Créditos (Profissionais):
+• Profissionais podem recarregar sua carteira de créditos na plataforma por meio dos métodos de pagamento disponíveis (cartão de crédito, débito ou PIX), processados pela Pagar.me, parceira certificada pelo Banco Central do Brasil
+• Os créditos são utilizados para acessar funcionalidades da plataforma, como o envio de orçamentos e a visibilidade nos pedidos de serviço
+• O saldo de créditos não é reembolsável, salvo nos casos previstos nestes Termos
+• Os preços dos pacotes de créditos estão disponíveis no aplicativo e podem ser ajustados mediante comunicação prévia de 30 dias
 
-Profissionais:
-• A Uppi cobra uma taxa de serviço sobre cada transação concluída, conforme exibido no momento do envio do orçamento
-• O valor líquido é creditado na carteira digital do profissional
-• Saques da carteira estão sujeitos aos prazos e condições da Pagar.me
-
-A Uppi reserva-se o direito de ajustar suas taxas mediante comunicação prévia de 30 dias.`,
+Pagamentos pelos Serviços:
+• Os valores pelos serviços prestados são acordados e gerenciados diretamente entre consumidor e Profissional, fora da plataforma Uppi
+• A Uppi não é parte do contrato de serviço e não processa, retém nem intermedeia quaisquer valores entre as partes`,
   },
   {
-    title: "6. Cancelamentos e Reembolsos",
-    content: `Cancelamentos por consumidores:
-• Pedidos podem ser cancelados antes de um profissional aceitar o orçamento, sem custo
-• Após a aceitação, cancelamentos podem estar sujeitos a taxas conforme a política vigente no momento
+    title: "6. Cancelamentos e Créditos",
+    content: `Cancelamentos de pedidos:
+• Consumidores podem cancelar pedidos antes de um Profissional aceitar o orçamento, sem qualquer custo na plataforma
+• A Uppi não é responsável por acordos ou valores negociados diretamente entre consumidores e Profissionais
 
-Cancelamentos por profissionais:
-• Cancelamentos recorrentes podem impactar negativamente a reputação do profissional na plataforma
+Cancelamentos por Profissionais:
+• Cancelamentos recorrentes podem impactar negativamente a reputação do Profissional na plataforma
 
-Reembolsos:
-• Em caso de disputa, a Uppi atuará como mediadora entre as partes
-• Reembolsos aprovados são processados em até 10 dias úteis, sujeitos aos prazos das operadoras de cartão
+Créditos da Carteira do Profissional:
+• Em caso de problemas técnicos comprovados que impeçam o uso dos créditos adquiridos, o Profissional pode solicitar análise ao suporte da Uppi
+• O saldo de créditos não é reembolsável em dinheiro, salvo por determinação legal ou a exclusivo critério da Uppi
 
-A Uppi não garante reembolso em casos de insatisfação com a qualidade do serviço prestado pelo Profissional, uma vez que não é parte do contrato de prestação de serviço.`,
+A Uppi não é parte dos contratos de prestação de serviço entre consumidores e Profissionais e não se responsabiliza por disputas relacionadas à qualidade ou execução dos serviços.`,
   },
   {
     title: "7. Avaliações e Reputação",
@@ -114,7 +114,7 @@ A Uppi não garante reembolso em casos de insatisfação com a qualidade do serv
 • Interrupções temporárias do serviço por manutenção ou falhas técnicas
 • Perdas decorrentes de uso não autorizado da conta por falha do usuário
 
-Nossa responsabilidade, quando aplicável, fica limitada ao valor das taxas cobradas pela Uppi na transação específica que gerou o dano.`,
+Nossa responsabilidade, quando aplicável, fica limitada ao valor dos créditos adquiridos pelo Profissional na operação específica que gerou o dano.`,
   },
   {
     title: "9. Propriedade Intelectual",
