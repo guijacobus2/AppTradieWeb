@@ -18,8 +18,8 @@ const navLinks = [
 ];
 
 const legalLinks = [
-  { label: "Política de Privacidade", href: "#" },
-  { label: "Termos de Uso", href: "#" },
+  { label: "Política de Privacidade", href: "/politica-de-privacidade" },
+  { label: "Termos de Uso", href: "/termos-de-uso" },
 ];
 
 export default function Footer() {
