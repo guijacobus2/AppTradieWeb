@@ -19,8 +19,7 @@ const sections = [
     title: "1. Quem somos",
     content: `A Uppi é uma plataforma que conecta consumidores a profissionais de serviços domésticos no Brasil. Somos o controlador dos dados pessoais que você nos fornece ao usar nosso aplicativo e site.
 
-Razão social: [NOME DA EMPRESA] — CNPJ: [XX.XXX.XXX/XXXX-XX]
-Contato: [privacidade@uppiapp.com.br]`,
+Contato: [Uppiservicos@gmail.com]`,
   },
   {
     title: "2. Dados que coletamos",
@@ -85,7 +84,7 @@ Não vendemos, alugamos nem comercializamos seus dados pessoais com terceiros pa
 • Revogação do consentimento: retirar seu consentimento a qualquer momento
 • Oposição: opor-se ao tratamento em caso de descumprimento da lei
 
-Para exercer qualquer um desses direitos, entre em contato pelo e-mail: [privacidade@uppiapp.com.br]
+Para exercer qualquer um desses direitos, entre em contato pelo e-mail: [Uppiservicos@gmail.com]
 Responderemos à sua solicitação em até 15 dias úteis.`,
   },
   {
@@ -118,7 +117,7 @@ O uso continuado da plataforma após a publicação de alterações constitui ac
     title: "11. Contato e encarregado (DPO)",
     content: `Para dúvidas, solicitações ou reclamações relacionadas ao tratamento de seus dados pessoais, entre em contato:
 
-E-mail: [privacidade@uppiapp.com.br]
+E-mail: [Uppiservicos@gmail.com]
 
 Você também tem o direito de apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD): www.gov.br/anpd`,
   },

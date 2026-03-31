@@ -146,7 +146,7 @@ Para resolução de conflitos de consumo, você também pode recorrer ao Portal 
     title: "12. Contato",
     content: `Para dúvidas, sugestões ou reclamações relacionadas a estes Termos de Uso:
 
-E-mail: [contato@uppiapp.com.br]
+E-mail: [Uppiservicos@gmail.com]
 Site: uppiapp.com.br`,
   },
 ];
