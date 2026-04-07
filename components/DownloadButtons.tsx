@@ -7,7 +7,7 @@ const BORD = "#242430";
 const TEXT = "#F0EDE8";
 const MUTE = "#9A96A0";
 
-const APPLE_STORE_URL = "#"; // TODO: replace with App Store URL
+const APPLE_STORE_URL = "https://apps.apple.com/app/uppi-servi%C3%A7os/id6761317029";
 const GOOGLE_PLAY_URL = "#"; // TODO: replace with Google Play URL
 
 function AppleLogo() {
